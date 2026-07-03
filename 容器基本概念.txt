@@ -1,0 +1,183 @@
+哪些是 append, 哪些是 add, 哪些是 remove/del 我還是會搞混，可以再列一 次清單嗎
+
+可以。
+這其實是 Python 初學 backend 時最常混的東西之一。
+
+因為：
+
+不同 container 的 API 不同
+
+你現在先不要死背。
+
+你先建立：
+
+「容器模型」
+先記一句核心
+list
+
+像：
+
+有順序的資料箱
+set
+
+像：
+
+唯一值集合
+dict
+
+像：
+
+key-value 映射表
+然後 API 就會開始合理
+1️⃣ list
+arr = []
+新增元素
+arr.append(x)
+
+因為：
+
+list 是「尾端增加」
+刪除最後一個
+arr.pop()
+刪指定 index
+del arr[i]
+刪指定值
+arr.remove(x)
+list 常見用途
+stack
+queue
+ordered data
+2️⃣ set
+seen = set()
+新增
+seen.add(x)
+
+注意：
+
+不是 append
+
+因為：
+
+set 沒有順序
+刪除
+seen.remove(x)
+set 沒有：
+append
+
+因為它不是線性尾端結構。
+
+set 常見用途
+去重
+membership check
+sliding window
+3️⃣ dict
+d = {}
+新增/更新
+d[key] = value
+
+例如：
+
+d["a"] = 1
+刪除 key
+del d[key]
+安全取值
+d.get(key, default)
+遍歷
+d.items()
+d.keys()
+d.values()
+dict 沒有：
+append
+add
+
+因為：
+
+dict 是 mapping
+
+不是集合或序列。
+
+你現在最容易混的是：
+append
+
+只給：
+
+list
+
+因為：
+
+有尾端順序
+add
+
+只給：
+
+set
+
+因為：
+
+集合新增元素
+remove
+
+給：
+
+list
+set
+
+但語意不同。
+
+del
+
+給：
+
+list index
+dict key
+我幫你整理成超短版
+list
+append
+pop
+remove
+del
+set
+add
+remove
+dict
+d[key] = value
+del
+get
+items
+values
+最後給你一個超實戰記法
+list
+
+像：
+
+隊伍
+
+所以：
+
+append
+
+很合理。
+
+set
+
+像：
+
+名單
+
+所以：
+
+add/remove
+
+合理。
+
+dict
+
+像：
+
+查表
+
+所以：
+
+key=value
+
+合理。

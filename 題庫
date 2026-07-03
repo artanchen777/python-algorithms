@@ -1,0 +1,33 @@
+Phase 0（已完成）
+Two Sum（hash map）✔
+Contains Duplicate（set）✔
+Valid Anagram（dict）✔
+Binary Search ✔
+I/O 基本題 ✔
+🟢 Phase 1（必練核心）
+
+6️⃣ Most Frequent Number（頻率統計）
+7️⃣ Longest Substring Without Repeating（Sliding Window）
+8️⃣ Subarray Sum Equals K（Prefix Sum + Hash）
+9️⃣ Merge Intervals（排序 + 區間處理）
+🔟 Top K Frequent Elements（heap 或 bucket）
+
+🟡 Phase 2（穩定加分）
+
+11️⃣ Group Anagrams
+12️⃣ Valid Parentheses（stack）
+13️⃣ Product of Array Except Self
+14️⃣ Remove Duplicates from Sorted Array
+
+🔵 SQL 模擬（最後一天）
+GROUP BY + HAVING
+JOIN
+LEFT JOIN
+Window function（ROW_NUMBER）
+🎯 考試戰術順序（真正上機時）
+
+1️⃣ 先解最簡單的 Programming
+2️⃣ 再解第二簡單
+3️⃣ 直接跳 SQL
+4️⃣ 做選擇題
+5️⃣ 回來打進階 Programming
